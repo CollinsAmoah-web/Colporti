@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a2141;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 1% 2%;
+    background: #173866;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: bolder;
+    border: solid aqua;
+    border-style: double;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 25px;
+    color: orange;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+    cursor: default;
+}
+
+.navbar a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(170, 87, 249);
+}
+
+.portfolio-section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.portfolio-section h1 {
+    font-size: 48px;
+    color: #f87060;
+    margin-bottom: 40px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: rgba(10, 33, 65, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(248, 112, 96, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category h2 {
+    color: #f87060;
+    margin-bottom: 15px;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.category p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    border: solid 5px white;
+    font-weight: bold;
+    color: #f87060;
+    background-color: rgba(248, 112, 96, 0.1);
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(248, 112, 96, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: rgba(248, 112, 96, 0.3);
+}
+
+@media (max-width: 900px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .category {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
